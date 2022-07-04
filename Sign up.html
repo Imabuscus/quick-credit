@@ -1,6 +1,6 @@
 <!DOCTYPE html>
 <html>
- <head>
+<head>
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <style>
     body {
@@ -35,17 +35,24 @@
  </head>
  <body>
     <div class="topnav">
-        <a class="active" href="#home">Home</a>
+        <a href="#home">Home</a>
         <a href="#about">About</a>
         <a href="#Request Loan">Request Loan</a>
         <a href="#contact Us">Contact Us</a>
-        <a href="#Sign up">Sign up</a>
+        <a class="active" href="#Sign up">Sign up</a>
         <a href="Login">Login</a> <!--this and the signup buttons need to be he moved to the left side-->
         s
     </div> 
-    <h1 class="title" style="font-size: xx-large; color: purple;">Quick Credit</h1>
-    <p class="intro">Quick Credit is an online lending platform that provides short term soft loans<br/> to individuals. This
-        helps solve problems of financial inclusion as a way to alleviate<br/> poverty and empower low
-        income earners.</p>
- </body>   
-</html>
+    <h1>Sign Up For Free!</h1>
+    <form action="/action_page.php">
+        <label for="fname">First name:</label>
+        <input type="text" id="fname" name="fname"><br><br>
+        <label for="lname">Last name:</label>
+        <input type="text" id="lname" name="lname"><br><br>
+        <label for="email">Email:</label>
+        <input type="email" id="email" name="email"><br/><br/>
+        <input type="submit" value="Submit">
+        <label for="Address">Address</label>
+        
+      </form>
+    </html>
