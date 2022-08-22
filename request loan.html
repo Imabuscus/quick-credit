@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <style>
+        body {
+            margin: 0;
+            font-family: Arial, Helvetica, sans-serif;
+        }
+
+        .topnav {
+            overflow: hidden;
+            background-color: black;
+        }
+
+        .topnav a {
+            float: left;
+            color: #f2f2f2;
+            text-align: center;
+            padding: 14px 16px;
+            text-decoration: none;
+            font-size: 17px;
+        }
+
+        .topnav a:hover {
+            background-color: white;
+            color: black;
+        }
+
+        .topnav a.active {
+            background-color: skyblue;
+            color: white;
+        }
+
+        label {
+            display: inline-block;
+            width: 100px;
+            margin-right: 10px;
+            text-align: left;
+        }
+
+        fieldset {
+            border: none;
+            width: 20px;
+            margin: 0px auto;
+        }
+
+        button {
+            background-color: skyblue;
+            border: none;
+            color: black;
+            padding: 15px 32px;
+            text-align: center;
+            text-decoration: none;
+            display: inline-block;
+            font-size: 16px;
+            margin: 4px 2px;
+            cursor: pointer;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="topnav">
+        <a href="index.html">Home</a>
+        <a href="About Page.html">About</a>
+        <a class="active" href="request loan.html">Request Loan</a>
+        <a href="Contact Us.html">Contact Us</a>
+        <a href="Sign up.html" style="margin-left: 60%;">Sign up</a>
+        <a href="log_in.html">Login</a>
+        <!--this and the signup buttons need to be he moved to the left side-->
+    </div>
+    <div style="text-align:center">
+    <h1 class="title" style="font-size: xx-large;">Request Loan</h1>
+    <form action="/action_page.php">
+        <label for="fname">First name:</label>
+        <input type="text" id="fname" name="fname" size="25"><br><br>
+        <label for="lname">Last name:</label>
+        <input type="text" id="lname" name="lname" size="25"><br><br>
+        <label for="email">Email:</label>
+        <input type="email" id="email" name="email" size="25"><br /><br />
+        <label for="Address">Address:</label>
+        <input type="text" id="Address" size="25"><br /><br />
+        <label for="Passowrd">Password:</label>
+        <input type="password" id="password" name="password" size="25"><br /><br />
+        <label for="password_check">Renter Passowrd:</label>
+        <input type="password" id="password_check" name="password_check" size="25"><br /><br />
+        <button type="button" onclick="alert('yeah this doesnt do anything yet')">Sign up</button>
+    </form>
+</div>
+</body>
+
+</html>
