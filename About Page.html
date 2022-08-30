@@ -44,16 +44,51 @@
     width: 20px;
     margin:0px auto;
     }
+    .topnav .icon {
+            display: none;
+        }
+
+        @media screen and (max-width: 600px) {
+            .topnav a:not(:first-child) {
+                display: none;
+            }
+
+            .topnav a.icon {
+                float: right;
+                display: block;
+            }
+        }
+
+        @media screen and (max-width: 600px) {
+            .topnav.responsive {
+                position: relative;
+            }
+
+            .topnav.responsive .icon {
+                position: absolute;
+                right: 0;
+                top: 0;
+            }
+
+            .topnav.responsive a {
+                float: none;
+                display: block;
+                text-align: left;
+            }
+
+        }
         </style>
      </head>
      <body>
-        <div class="topnav">
+        <div class="topnav" id="myTopnav">
             <a href="index.html">Home</a>
             <a class="active" href="About Page.html">About</a>
             <a href="request loan.html">Request Loan</a>
             <a href="Contact Us.html">Contact Us</a>
-            <a href="Sign up.html" style="margin-left: 60%;">Sign up</a>
-            <a href="log_in.html">Login</a> <!--this and the signup buttons need to be he moved to the left side-->
+            <a href="Sign up.html">Sign up</a>
+            <a href="log_in.html">Login</a>
+            <a href="Loan history.html">Loan History</a>
+            <a href="javascript:void(0);" class="icon" onclick="myFunction()"></a>
             s
         </div>    
     <h1 class="first title"> About us</h1>
@@ -68,4 +103,14 @@
      <p3>For more Information, you can find our contact info </p3>
      <a href="Contact Us.html">here</a>
 </body>
+<script>
+  function myFunction() {
+      var x = document.getElementById("myTopnav");
+      if (x.className === "topnav") {
+          x.className += " responsive";
+      } else {
+          x.className = "topnav";
+      }
+  }
+</script>
 </html>
